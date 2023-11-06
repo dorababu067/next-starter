@@ -1,0 +1,21 @@
+// Override Existing variables
+// $primary:#b3d421;
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// custom-colors
+$custom-colors:(
+    "coffee":#873e23,
+    "dark-blue":#063970
+);
+
+$theme-colors:map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/bootstrap";
+
+.navbar__brand{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
